@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoreSquad</title>
+    <title>ShoreSquad Beach Cleanup</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to ShoreSquad!</h1>
-        <p>Rally your crew, track weather, and hit the next beach cleanup!</p>
+        <h1>ShoreSquad Beach Cleanup</h1>
     </header>
-    <main>
-        <section id="map">
-            <h2>Map of Upcoming Cleanups</h2>
-            <!-- Map will be integrated here -->
-        </section>
-        <section id="weather">
-            <h2>Current Weather</h2>
-            <!-- Weather information will be displayed here -->
-        </section>
-        <section id="crew">
-            <h2>Your Crew</h2>
-            <!-- Crew management features will be here -->
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 ShoreSquad. All rights reserved.</p>
-    </footer>
-    <script src="js/app.js"></script>
+    <div class="container mt-4">
+        <h2>Next Cleanup Spot: Pasir Ris</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" 
+                    src="https://maps.google.com/maps?q=1.381497,103.955574&amp;hl=en&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" 
+                    allowfullscreen>
+            </iframe>
+        </div>
+        <p class="mt-2 text-center font-weight-bold">Next Cleanup</p>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
