@@ -87,3 +87,37 @@ button:hover {
         width: 100%;
     }
 }
+
+/* Weather Components */
+.weather-container {
+    display: flex;
+    gap: var(--spacing-md);
+    overflow-x: auto;
+    padding: var(--spacing-md) 0;
+}
+
+.weather-card {
+    background: var(--white);
+    border-radius: 0.5rem;
+    padding: var(--spacing-md);
+    min-width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+    margin: var(--spacing-sm) auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Weather Icons - Add appropriate weather icons or use emoji as placeholders */
+.partly-cloudy { background-image: url('../assets/weather-icons/partly-cloudy.svg'); }
+.thunderstorm { background-image: url('../assets/weather-icons/thunderstorm.svg'); }
+.light-rain { background-image: url('../assets/weather-icons/light-rain.svg'); }
+.moderate-rain { background-image: url('../assets/weather-icons/moderate-rain.svg'); }
+.cloudy { background-image: url('../assets/weather-icons/cloudy.svg'); }
+.fair { background-image: url('../assets/weather-icons/fair.svg'); }
+.default-weather { background-image: url('../assets/weather-icons/default.svg'); }
